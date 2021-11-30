@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logoDiv img {
+  width: 300px;
+}
+
+.header .navBar {
+  padding: 0 5% 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navBar .emptyDiv,
+.header .navBar .language {
+  width: 100px;
+}
+
+.header .navBar .navBarLinks {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+.header .navBar .navBarLinks a {
+  text-decoration: none;
+  color: black;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header .navBar .navBarLinks input {
+  background-color: transparent;
+  border: 1px solid #c9c6c6;
+  width: 100px;
+  padding-left: 5px;
+}
+
+.header .navBar .navBarLinks input:focus {
+  outline: 1px solid rgba(255, 0, 0, 0.233);
+  border: 1px solid transparent;
+}
+
+.header .navBar .navBarLinks .forSale {
+  position: relative;
+}
+
+.header .navBar .navBarLinks .forSale .forSaleDropDown {
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.9);
+  list-style-type: none;
+  height: 0px;
+  opacity: 0;
+  width: 160px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 10px 10px 0 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.9), inset 0px 0px 10px 10px rgba(255, 255, 255, 0.9);
+          box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.9), inset 0px 0px 10px 10px rgba(255, 255, 255, 0.9);
+}
+
+.header .navBar .navBarLinks .forSale .forSaleDropDown li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Dosis", sans-serif;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header .navBar .navBarLinks .forSale .forSaleDropDown li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.header .navBar .navBarLinks .forSale .forSaleDropDown li:hover {
+  border-bottom: 2px solid black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .navBar .navBarLinks .forSale:hover .forSaleDropDown {
+  opacity: 1;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .navBar .navBarLinks .forRent {
+  position: relative;
+}
+
+.header .navBar .navBarLinks .forRent .forRentDropDown {
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.9);
+  list-style-type: none;
+  height: 0px;
+  opacity: 0;
+  width: 160px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 10px 10px 0 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.9), inset 0px 0px 10px 10px rgba(255, 255, 255, 0.9);
+          box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.9), inset 0px 0px 10px 10px rgba(255, 255, 255, 0.9);
+}
+
+.header .navBar .navBarLinks .forRent .forRentDropDown li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Dosis", sans-serif;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header .navBar .navBarLinks .forRent .forRentDropDown li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.header .navBar .navBarLinks .forRent .forRentDropDown li:hover {
+  border-bottom: 2px solid black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .navBar .navBarLinks .forRent:hover .forRentDropDown {
+  opacity: 1;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.rounds {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.rounds .outsideRound {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rounds .outsideRound .round {
+  border: 2px solid rgba(248, 152, 205, 0.288);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.rounds .outsideRound .round .insideRound {
+  margin: 5px;
+  border-radius: 15px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.rounds .outsideRound .round .insideRound img {
+  float: left;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.rounds .outsideRound .round:hover img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.main {
+  position: relative;
+}
+
+.main .mainPage {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .mainPage .mainProducts {
+  border: 2px solid #e4de99;
+  border-radius: 10px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 600px;
+  margin: 50px 0 150px 0;
+}
+
+.main .mainPage .mainProducts .mainProductInfo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .mainPage .mainProducts .mainProductImg {
+  width: 50%;
+  min-width: 400px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.main .mainPage .mainProducts .mainProductImg .backImg {
+  border-radius: 20px;
+  z-index: 2;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80%;
+  height: 80%;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .mainPage .mainProducts .mainProductImg .frontImg {
+  border-radius: 20px;
+  z-index: 1;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .mainPage .mainProducts .mainProductImg:hover .frontImg {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .mainPage .mainProducts .mainProductImg:hover .backImg {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .filter {
+  z-index: 11;
+  position: absolute;
+  top: 0px;
+  left: -300px;
+  width: 300px;
+  background-color: rgba(245, 239, 239, 0.836);
+  padding: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: auto;
+}
+
+.main .filter .openerLeft #filterButton {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background-color: gray;
+  color: white;
+  border-radius: 15px;
+}
+
+.main .filter .openerLeft #filterButton:hover {
+  background-color: #9a9a9a;
+}
+
+.main .filter .openerLeft hr {
+  margin: 15px 0 10px;
+}
+
+.main .filter .openerLeft p {
+  margin-bottom: 10px;
+}
+
+.main .filter .openerLeft ul {
+  list-style-type: none;
+}
+
+.main .filter .openerLeft ul li {
+  margin-left: 20px;
+}
+
+.main .filter .openerLeft ul li label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.main .filter:hover {
+  background-color: #f5efef;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .grayBlocker {
+  z-index: -10;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.532);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .filter:hover ~ .grayBlocker {
+  z-index: 10;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.w300 {
+  left: 0;
+}
+/*# sourceMappingURL=index.css.map */

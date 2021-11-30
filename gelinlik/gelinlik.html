@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gelinlik</title>
+        <link rel="stylesheet" href="gelinlik.css" />
+        <script type="module" src="gelinlik.js" defer></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="logoDiv">
+                <img src="../assets/gayen-logo.png" alt="gayen-logo" />
+            </div>
+            <div class="navBar">
+                <div class="emptyDiv"></div>
+                <ul class="navBarLinks">
+                    <li class="forSale">
+                        <a href="#"> S<small>ATILIK</small> </a>
+                        <ul class="forSaleDropDown">
+                            <li><a href="#">Gelinlik</a></li>
+                            <li><a href="#">Tesettür Gelinlik</a></li>
+                            <li><a href="#">Büyük Beden Gelinlik</a></li>
+                            <li><a href="#">Kaftan-Abiye-Nişanlık</a></li>
+                            <li><a href="#">Bindallı</a></li>
+                            <li><a href="#">Duvak</a></li>
+                            <li><a href="#">İndirimli</a></li>
+                        </ul>
+                    </li>
+                    <li class="forRent">
+                        <a href="#"> K<small>İRALIK</small> </a>
+                        <ul class="forRentDropDown">
+                            <li>
+                                <a href="../gelinlik/gelinlik.html">Gelinlik</a>
+                            </li>
+                            <li><a href="#">Tesettür Gelinlik</a></li>
+                            <li><a href="#">Büyük Beden Gelinlik</a></li>
+                            <li><a href="#">Kaftan-Abiye-Nişanlık</a></li>
+                            <li><a href="#">Bindallı</a></li>
+                            <li><a href="#">Duvak</a></li>
+                            <li><a href="#">İndirimli</a></li>
+                        </ul>
+                    </li>
+                    <li class="contact">
+                        <a href="#"> İ<small>LETİŞİM</small> </a>
+                    </li>
+                    <li class="liked">
+                        <a href="#"> B<small>EĞENDİKLERİM</small> </a>
+                    </li>
+                    <li>
+                        <input type="search" placeholder="Ara" />
+                    </li>
+                </ul>
+                <div class="language">
+                    <select name="" id="languageMenu">
+                        <option value="turkish">Türkçe</option>
+                        <option value="english">English</option>
+                        <option value="arabic">عربي</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER -->
+        <!-- MAIN -->
+        <div class="main">
+            <div class="mainProducts"></div>
+            <div class="filter">
+                <div className="openerLeft">
+                    <button id="filterButton">FİLTRELE</button>
+                    <p>Beden</p>
+                    <ul className="sizeFilter">
+                        <li>
+                            <input type="checkbox" id="sizeXS" />
+                            <label for="sizeXS">XS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sizeS" />
+                            <label for="sizeS">S</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sizeM" />
+                            <label for="sizeM">M</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sizeL" />
+                            <label for="sizeL">L</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sizeXL" />
+                            <label for="sizeXL">XL</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sizeXXL" />
+                            <label for="sizeXXL">XXL</label>
+                        </li>
+                    </ul>
+                    <hr />
+                    <p>Boy</p>
+                    <ul className="heightFilter">
+                        <li>
+                            <input type="checkbox" id="uzun" />
+                            <label for="uzun">Uzun</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="kisa" />
+                            <label for="kisa">Kısa</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="midi" />
+                            <label for="midi">Midi</label>
+                        </li>
+                    </ul>
+                    <hr />
+                    <p>Kumaş</p>
+                    <ul class="clothFilter">
+                        <li>
+                            <input type="checkbox" id="dantel" />
+                            <label for="dantel">Dantel</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="tul" />
+                            <label for="tul">Tül</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="saten" />
+                            <label for="saten">Saten</label>
+                        </li>
+                    </ul>
+                    <hr />
+                    <p>Kol Tipi</p>
+                    <ul class="armFilter">
+                        <li>
+                            <input type="checkbox" id="straplez" />
+                            <label for="straplez">Straplez</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="askili" />
+                            <label for="askili">Askılı</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="kisaKollu" />
+                            <label for="kisaKollu">Kısa Kollu</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="uzunKollu" />
+                            <label for="uzunKollu">Uzun Kollu</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="dusuk" />
+                            <label for="dusuk">Düşük Omuzlu</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="kayikYaka" />
+                            <label for="kayikYaka">Kayık Yaka</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grayBlocker"></div>
+        </div>
+        <!-- MAIN -->
+    </body>
+</html>
