@@ -86,7 +86,7 @@
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.9);
   list-style-type: none;
-  height: auto;
+  height: 0px;
   opacity: 0;
   width: 160px;
   overflow-x: hidden;
@@ -125,6 +125,7 @@
   opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  height: auto;
 }
 
 .header .navBar .navBarLinks .forSale:hover li {
@@ -146,7 +147,7 @@
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.9);
   list-style-type: none;
-  height: auto;
+  height: 0px;
   opacity: 0;
   width: 160px;
   overflow: auto;
@@ -186,6 +187,7 @@
   opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  height: auto;
 }
 
 .header .navBar .navBarLinks .forRent:hover li {
@@ -196,6 +198,34 @@
 
 .main {
   position: relative;
+}
+
+.main .filterAndSort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.main .filterAndSort .filterButton {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.main .filterAndSort .sortSelectBox {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  height: 30px;
+  cursor: pointer;
 }
 
 .main .mainProducts {
@@ -247,14 +277,14 @@
   top: 0px;
   left: -300px;
   width: 300px;
-  background-color: rgba(245, 239, 239, 0.836);
+  background-color: #f5efef;
   padding: 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow: auto;
 }
 
-.main .filter .openerLeft #filterButton {
+.main .filter .openerLeft .filterActive {
   margin-bottom: 20px;
   width: 100%;
   height: 30px;
@@ -267,7 +297,7 @@
   border-radius: 15px;
 }
 
-.main .filter .openerLeft #filterButton:hover {
+.main .filter .openerLeft .filterActive:hover {
   background-color: #9a9a9a;
 }
 

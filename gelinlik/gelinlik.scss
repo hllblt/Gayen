@@ -66,7 +66,7 @@
                     // background-color: rgb(250, 243, 248);
                     background-color: rgba(255, 255, 255, 0.9);
                     list-style-type: none;
-                    height: auto;
+                    height: 0px;
                     opacity: 0;
                     width: 160px;
                     overflow-x: hidden;
@@ -99,8 +99,9 @@
             .forSale:hover .forSaleDropDown {
                 opacity: 1;
                 transition: 0.3s;
+                height: auto;
             }
-            .forSale:hover li{
+            .forSale:hover li {
                 height: 20px;
                 transition: 0.3s;
             }
@@ -115,7 +116,7 @@
                     z-index: 999;
                     background-color: rgba(255, 255, 255, 0.9);
                     list-style-type: none;
-                    height: auto;
+                    height: 0px;
                     opacity: 0;
                     width: 160px;
                     overflow: auto;
@@ -150,8 +151,9 @@
             .forRent:hover .forRentDropDown {
                 opacity: 1;
                 transition: 0.3s;
+                height: auto;
             }
-            .forRent:hover li{
+            .forRent:hover li {
                 height: 20px;
                 transition: 0.3s;
             }
@@ -165,28 +167,55 @@
 
 .main {
     position: relative;
+
+    //////////////////////FILTERANDSORT///////////////////
+
+    .filterAndSort {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 40px;
+        .filterButton {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .sortSelectBox {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            height: 30px;
+            cursor: pointer;
+        }
+    }
+
+    //////////////////////FILTERANDSORT///////////////////
+
     //////////////////////MAINPRODUCTS///////////////
 
     .mainProducts {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        .products{
+        .products {
             min-width: 300px;
             padding: 25px;
             height: 600px;
             display: flex;
             justify-content: center;
             flex-direction: column;
-            img{
+            img {
                 width: 300px;
                 object-fit: contain;
             }
-            h2{
+            h2 {
                 width: 100%;
                 text-align: center;
             }
-            p{
+            p {
                 width: 100%;
                 text-align: justify;
             }
@@ -202,12 +231,12 @@
         top: 0px;
         left: -300px;
         width: 300px;
-        background-color: rgba(245, 239, 239, 0.836);
+        background-color: rgba(245, 239, 239, 1);
         padding: 20px;
         transition: 0.3s;
         overflow: auto;
         .openerLeft {
-            #filterButton {
+            .filterActive {
                 margin-bottom: 20px;
                 width: 100%;
                 height: 30px;
@@ -216,10 +245,11 @@
                 cursor: pointer;
                 border: none;
                 background-color: gray;
+                // background-color: red;
                 color: white;
                 border-radius: 15px;
             }
-            #filterButton:hover {
+            .filterActive:hover {
                 background-color: lighten(gray, 10%);
             }
             hr {

@@ -4,15 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Gelinlik</title>
+        <title>Gelinlik - Gayen Gelinlik</title>
         <link rel="stylesheet" href="gelinlik.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <script type="module" src="gelinlik.js" defer></script>
     </head>
     <body>
         <!-- HEADER -->
         <div class="header">
             <div class="logoDiv">
-                <img src="../assets/gayen-logo.png" alt="gayen-logo" />
+                <a href="../index.html"
+                    ><img src="../assets/gayen-logo.png" alt="gayen-logo"
+                /></a>
             </div>
             <div class="navBar">
                 <div class="emptyDiv"></div>
@@ -65,12 +74,23 @@
         <!-- HEADER -->
         <!-- MAIN -->
         <div class="main">
+            <div class="filterAndSort">
+                <button class="filterButton">
+                    <i class="fas fa-filter"></i>
+                </button>
+                <select class="sortSelectBox">
+                    <option value="default" disabled>Sırala</option>
+                    <option value="smart">Akıllı sıralama</option>
+                    <option value="lowtohigh">Fiyata göre artan</option>
+                    <option value="hightolow">Fiyata göre azalan</option>
+                </select>
+            </div>
             <div class="mainProducts"></div>
             <div class="filter">
-                <div className="openerLeft">
-                    <button id="filterButton">FİLTRELE</button>
+                <div class="openerLeft">
+                    <button class="filterActive">FİLTRELE</button>
                     <p>Beden</p>
-                    <ul className="sizeFilter">
+                    <ul class="sizeFilter">
                         <li>
                             <input type="checkbox" id="sizeXS" />
                             <label for="sizeXS">XS</label>
@@ -98,7 +118,7 @@
                     </ul>
                     <hr />
                     <p>Boy</p>
-                    <ul className="heightFilter">
+                    <ul class="heightFilter">
                         <li>
                             <input type="checkbox" id="uzun" />
                             <label for="uzun">Uzun</label>
@@ -156,6 +176,7 @@
                             <label for="kayikYaka">Kayık Yaka</label>
                         </li>
                     </ul>
+                    <button class="filterActive">FİLTRELE</button>
                 </div>
             </div>
             <div class="grayBlocker"></div>
