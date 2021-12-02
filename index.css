@@ -121,6 +121,18 @@
   transition: 0.3s;
 }
 
+.header .navBar .navBarLinks .forSale:hover .forSaleDropDown {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .navBar .navBarLinks .forSale:hover li {
+  height: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .header .navBar .navBarLinks .forRent {
   position: relative;
   font-family: "Dosis", sans-serif;
@@ -166,6 +178,18 @@
 
 .header .navBar .navBarLinks .forRent .forRentDropDown li:hover {
   border-bottom: 2px solid black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .navBar .navBarLinks .forRent:hover .forRentDropDown {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .navBar .navBarLinks .forRent:hover li {
+  height: 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -254,6 +278,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 600px;
@@ -271,11 +298,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 350px;
 }
 
 .main .mainPage .mainProducts .mainProductImg {
   width: 50%;
-  min-width: 400px;
+  min-width: 350px;
   overflow-y: hidden;
   overflow-x: hidden;
   display: -webkit-box;
